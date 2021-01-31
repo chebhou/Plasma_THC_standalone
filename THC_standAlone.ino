@@ -5,22 +5,17 @@
    A2 = Stepper speed, ie, period between pulses.
    A3 = setPointInput //pot to adjust voltage setpoint.
 
-
-
    D4 = arcOkInput //Arc OK signal from plasma machine.
 
    D5 = dirPin  // connected to stepper driver.
    D9 = stepPin // connected to stepper driver.
 
-   D6  = HighLedPin  //high led pin
-   D8  = lowLedPin   //low led pin
-   D10 = arcOkLedPin // independant led pin
-
    D2 = interruptPin //  pulses from controller.
    D7 = grblDirPin   //  dir  from controller.
 
-  
-
+   D6  = HighLedPin  //high led pin
+   D8  = lowLedPin   //low led pin
+   D10 = arcOkLedPin // independant led pin
 
 
 */
@@ -32,13 +27,17 @@ namespace
 constexpr int arcVoltageInput = A0;
 constexpr int pulseIntervalInput = A2;
 constexpr int setPointInput = A3;
-constexpr int interruptPin = 2;
+
 constexpr int arcOkInput = 4;
+
 constexpr int dirPin = 5;
-constexpr int highLedPin = 6;
-constexpr int grblDirPin = 7;
-constexpr int lowLedPin = 8;
 constexpr int stepPin = 9;
+
+constexpr int interruptPin = 2;
+constexpr int grblDirPin = 7;
+
+constexpr int highLedPin = 6;
+constexpr int lowLedPin = 8;
 constexpr int arcOkLedPin = 10;
 
 
